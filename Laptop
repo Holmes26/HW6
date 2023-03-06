@@ -1,0 +1,20 @@
+package org.example.HwFinal;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class Laptop {
+    public String name;
+    public String model;
+    public String RAM;
+    public String hardDisk;
+    public String OS;
+    public String color;
+
+    public String printInfo(){
+        System.out.printf("Ноутбук: "+name+ ", Model: "+model+", RAM: "+RAM+" Гб, Hard Disk: "+hardDisk+" Гб, OS: "+OS+", Color: "+color);
+        return ".";
+    }
+}
